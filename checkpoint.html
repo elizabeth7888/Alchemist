@@ -1,0 +1,62 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"> 
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<html>
+	<head>
+		<title>Assignment 5: State of the Game</title>
+	</head>
+	<!-- Style sheet for game -->
+	<link rel="stylesheet" type="text/css" href="projdesc.css">
+
+<body>
+<a name="top"></a>
+
+  <div id="desc">
+  <ol class="prefixed romanstyle">
+  <a name="intro"></a>
+  <li>State of the Game</li>
+  <p>The current state of the game is almost playable for fun.  Basic tile logic 
+  is in place, although there are a few bugs and there are no transition between levels.
+  The start of the game is implemented, although I want to include a tutorial 
+  at some point.  A debug pane has been added, which can be switched off later; for now
+  it just reports whatever debug info I tell it (click events, state changes).
+  </p>
+  <p>Below is a more detailed list of the game logic state.</p>
+  <ul class="minilist">
+  <li>Randomized tiles: </li> tiles are randomly chosen (color, type) and displayed 
+  on the next item area.
+  <li>Tile placement logic: </li> wildcards can go next to any other tile; bombs can
+  replace any placed tile; other tiles must match the surrounding tiles by color or
+  type; these conditions are exclusive, meaning that unless you have a clean board, 
+  you cannot place a tile in an unsurrounded space.
+  <li>Bomb tile: </li> Bomb tiles will replace the placed tile (not gold or lead) with
+  a gold tile.
+  <li>Wildcard tile: </li> wildcard cannot be thrown away.
+  <li>Row completion: </li> not yet implemented.
+  <li>Board completion: </li> not yet implemented.
+  <li>Level advancement: </li> not yet implemented.
+  <li>Rank advancement: </li> not yet implemented.
+  <li>New tiles/colors: </li> goes iwht level advancement, not implemented.
+  <li>Scoring: </li> partially implemented; only tiles give points.
+  <li>End game condition: </li> will report if you lose the game in debug, but no 
+  other notification.
+  <li>Waste: </li> state will advance and will end game at state 4.  Will increase or
+  decrease depending on tile placement or tile discard.  Other conditions based on row
+  or board completion not implemented.
+  </ul>
+  <li>Update, Assignment 5</li>
+  <p>All game logic is implemented.  There is an issue with choosing a custom level (can 
+  validly select the first option) which will be fixed in next update.  Future
+  work includes: </p>
+  <ul class="minilist">
+  <li>High score board</li>
+  <li>Tutorial</li>
+  <li>Controls for controlling sound/music</li>
+  <li>General Model/View clean up</li>
+  <li>Custom grid size (dev side & for level 30+)</li>
+  <li>Music???</li>
+  <li>Mobile adaptation???</li>
+  </ul>
+  </ol>
+  </div>
+</body>
+</html>

@@ -1,0 +1,534 @@
+body {
+	background-color: #0a0a0a;
+}
+
+#gameboard {
+	position:relative;
+	margin-left: auto;
+	margin-right: auto;
+	width:auto;
+	background-color: #111111;
+	padding:50px;
+	z-index:1;
+}
+
+#header {
+	width: 100%;
+	height: 15px;
+	font-size: 12px;
+	background-color: #1a1a1a;
+	color: #eeeeee;
+	display: block;
+}
+
+a {
+	text-decoration: none;
+	font-weight: bold;
+}
+
+a:hover {
+	color: #8888ff;
+	cursor: pointer;
+}
+
+#grid {
+	position:relative;
+	display:inline-block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0px;
+    padding: 0;
+
+}
+
+.row {
+	position:relative;
+}
+
+.cell {
+	position:relative;
+	width:38px;
+	height:38px;
+	display:inline-block;
+	border:1px solid #111111;
+}
+
+.cellimg {
+	position:absolute;
+	width:40px;
+	height:40px;
+	top:0px;
+	left:0px;
+}
+
+.cell:hover {
+	cursor:pointer;
+}
+
+.celleven {
+	position:relative;
+	width:40px;
+	height:40px;
+	border:1px solid black;
+	display:inline-block;
+	background-color: #333333
+}
+
+.cellodd {
+	position:relative;
+	width:40px;
+	height:40px;
+	border:1px solid black;
+	display:inline-block;
+	background-color: #333333
+}
+
+#gameinfo {
+	position:relative;
+	display:inline-block;
+	border:1px solid black;
+	vertical-align: top;
+	padding:5px;
+	margin-left:40px;
+	height: 145px;
+}
+
+#nextitem {
+	position:relative;
+	width:60px;
+	height:60px;
+	border:1px solid green;
+	vertical-align: top;
+	margin-bottom: 20px;
+	background-color: #333333
+}
+
+#nextitemimg {
+	position:relative;
+	width:60px;
+	height:60px;
+}
+
+#dross {
+	position:absolute;
+	width:60px;
+	height:60px;
+	border:1px solid red;
+	vertical-align: top;
+	background-color: #333333;
+}
+
+#drosscover {
+	position:absolute;
+	left:0px;
+	top:0px;
+	width:60px;
+	height:60px;
+	z-index:1;	
+}
+
+#drossfluid {
+	position:absolute;
+	left:0px;
+	top:0px;
+	width:60px;
+	height:60px;
+	z-index:0;	
+}
+
+#abc {
+	position:absolute;
+	width:100%;
+	height:100%;
+	opacity:.95;
+	top:0;
+	left:0;
+	display:none;
+	position:fixed;
+	background-color:#313131;
+	overflow:auto;
+	z-index:2;
+}
+
+#abc_levels {
+	position:absolute;
+	width:100%;
+	height:100%;
+	opacity:.95;
+	top:0;
+	left:0;
+	display:none;
+	position:fixed;
+	background-color:#313131;
+	overflow:auto;
+	z-index:2;
+}
+
+#abc_endgame {
+	position:absolute;
+	width:100%;
+	height:100%;
+	opacity:.95;
+	top:0;
+	left:0;
+	display:none;
+	position:fixed;
+	background-color:#313131;
+	overflow:auto;
+	z-index:2;
+
+}
+
+#tutorialdiv {
+	position:absolute;
+	width:100%;
+	height:100%;
+	top:0;
+	left:0;
+	display:none;
+	position:fixed;
+	background-color:#313131;
+	overflow:auto;
+	z-index:2;
+}
+
+.tutorial {
+	display:block;
+	width:100%;
+	margin-left:0%;
+	margin-right:0%;
+	height:100%;
+	margin-top:0%;
+	margin-bottom:0%;
+}
+
+#titleanimation {
+	position:absolute;
+	width:100%;
+	height:100%;
+	/*opacity:.95;*/
+	top:0;
+	left:0;
+	display:none;
+	background-color:#2d2d2d;
+	color:#ffffff;
+	font-size:8px;
+	overflow:auto;
+	z-index:2;
+}
+
+
+#animationtxt {
+	color:#fff;
+	font-size:80px;
+	/*background-color:#2d2d2d;*/
+	text-shadow:0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #3498db, 0 0 30px #3498db, 0 0 40px #3498db, 0 0 55px #3498db, 0 0 75px #3498db;
+	position:absolute;
+	left:30%;
+	top:30%;
+	width:40%;
+	height:40%;
+	display:block;
+	z-index:2;
+}
+
+#popup_start {
+	position:absolute;
+	left:35%;
+	top:25%;
+	width:30%;
+	height:30%;
+	display:block;
+	z-index:2;
+}
+
+#popup_levels {
+	position:absolute;
+	left:25%;
+	top:30%;
+	width:50%;
+	height:30%;
+	display:block;
+	color:#eeeeee;
+	z-index:2;
+}
+
+#endgame {
+	position:absolute;
+	width:500px;
+	height:350px;
+	display:block;
+	z-index:2;
+   top:50%;
+   left:50%;
+   padding:15px;
+   -ms-transform: translateX(-50%) translateY(-50%);
+   -webkit-transform: translate(-50%,-50%);
+   transform: translate(-50%,-50%);	
+	
+}
+
+.menurow {
+	position:relative;
+	display:inline-block;
+}
+
+.wiggleroom {
+	padding:5px;
+}
+
+.morewiggleroom {
+	padding: 15px;
+}
+
+.button {
+  width:85%;
+  position:relative;
+  /*
+  background: #3498db;
+  border-radius: 14px;
+  font-family: Arial;
+  color: #eeeeee;
+  font-size: 20px;
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+  */
+  
+  background: #d93458;
+  background-image: -webkit-linear-gradient(top, #d93458, #2980b9);
+  background-image: -moz-linear-gradient(top, #d93458, #2980b9);
+  background-image: -ms-linear-gradient(top, #d93458, #2980b9);
+  background-image: -o-linear-gradient(top, #d93458, #2980b9);
+  background-image: linear-gradient(to bottom, #d93458, #2980b9);
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0px;
+  text-shadow: 6px 5px 2px #666666;
+  -webkit-box-shadow: 0px 1px 3px #666666;
+  -moz-box-shadow: 0px 1px 3px #666666;
+  box-shadow: 0px 1px 3px #666666;
+  font-family: Arial;
+  color: #ffffff;
+  font-size: 20px;
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+}
+
+.buttonsmall {
+  position:relative;
+  background: #3498db;
+
+  border-radius: 28px;
+  font-family: Arial;
+  color: #eeeeee;
+  font-size: 20px;
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+  display:inline;
+
+}
+
+#newgamebutton {
+  width:50%;
+}
+
+.button:hover {
+  background: #3cb0fd;
+
+  text-decoration: none;
+  cursor:pointer;
+}
+
+.buttonsmall:hover {
+/*
+  background: #3cb0fd;
+
+  text-decoration: none;
+  */
+  background: #fc3c56;
+  background-image: -webkit-linear-gradient(top, #fc3c56, #3498db);
+  background-image: -moz-linear-gradient(top, #fc3c56, #3498db);
+  background-image: -ms-linear-gradient(top, #fc3c56, #3498db);
+  background-image: -o-linear-gradient(top, #fc3c56, #3498db);
+  background-image: linear-gradient(to bottom, #fc3c56, #3498db);
+  text-decoration: none;
+  cursor:pointer;
+}
+
+#debug {
+	display:none;
+}
+/*
+#custom {
+	display:block;
+}
+*/
+#clickmessage {
+	font-size:8px;
+	color:#eeeeee;
+	display: none;
+}
+
+#debugtxt {
+	position: absolute;
+	left: 50px;
+	top: 200px;
+	width: 20%;
+	height: 50%;
+	background-color: #000000;
+	color: #eeeeee;
+	font-size: 8px;
+	z-index:1;
+	border:1px solid #333333;
+	display:none;
+}
+
+#debugtxt:hover {
+	cursor:move;
+}
+
+#nameinput {
+	font-size: 12px;
+	color: #eeeeee;
+}
+
+#name {
+	background-color: #333333;
+	color: #eeeeee;
+	border-radius: 14px;
+	font-family: Arial;
+   color: #eeeeee;
+   width:70%;
+   text-align:center;
+}
+
+
+#levelselect {
+	background-color: #333333;
+	color: #eeeeee;
+	border-radius: 14px;
+	font-family: Arial;
+   color: #eeeeee;
+   width:70%;
+}
+
+img.blurred { 	
+	filter: blur(1px); 
+	-webkit-filter: blur(1px);
+	-moz-filter: blur(1px);
+	-o-filter: blur(1px);
+	-ms-filter: blur(1px);
+	margin: -3px -3px -3px -3px;
+}
+
+#endgametitle {
+	color: #eeeeee;
+	font-family: Arial;
+   text-align:center;
+   font-size: 30px;
+   text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #aaf, 0 0 30px #aaf, 0 0 40px #aaf, 0 0 55px #aaf, 0 0 75px #aaf;
+}
+
+#highscores {
+	color: #eeeeee;
+	background-color: #777777;
+/*	width:70%;*/
+	height:80%;
+	border-radius: 5px;
+	font-family: Arial;
+}
+
+
+.invisible {
+	padding-left:15px;
+	padding-right:15px;
+	overflow: hidden; 
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+
+.smalltxt {
+	font-size: 10px;
+}
+
+#dumb {
+	background-color: #333333;
+	color: #dddddd;
+	border: 2px;
+	border-color: #666666;
+	border-radius: 3px;
+}
+
+#dumb:hover {
+	background-color: #3333dd;
+	color: #ffdddd;
+}
+
+#sounds {
+	display:none;
+}
+
+#clicktut {
+	text-decoration: none;
+	color:#ff3355;
+}
+
+#tutprompt {
+	color: #ff3355;
+	display:none;
+	position:absolute;
+	width:50%;
+	height:30%;
+	top:30%;
+	left:25%;
+	position:fixed;
+	background-color:#533131;
+	overflow:auto;
+	z-index:2;
+	border-radius: 5px;
+}
+
+.tutpic {
+	width:100%;
+}
+
+#clearstorage {
+	color:cyan;
+	font-size: 12px;
+}
+
+#clearstorage:hover {
+	color:red;
+	cursor:pointer;
+}
+
+#loadgamediv {
+	display: block;
+}
+
+#savegame {
+	position:absolute;
+	left:20px;
+	top:10px;
+	height:15px;
+	font-size: 8px;
+	color: #eeeeee;
+}
+
+#savegame:hover
+{
+	color:red;
+	cursor:pointer;
+}
+
+#clickmsg {
+	color:#eeeeee;
+	font-size:12px;
+	position:absolute;
+	left:80%;
+	top:95%;
+}

@@ -1,0 +1,46 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"> 
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<html>
+	<head>
+		<title>Project Description</title>
+
+	<!-- Style sheet for game -->
+	<link rel="stylesheet" type="text/css" href="projdesc.css">
+	</head>
+<body>
+
+<div style="width:90%;margin-left:5%;margin-right:5%">
+<ol class="prefixed romanstyle">
+<li>Introduction</li>
+Alchemist was implemented using a model-view-controller design.  Although during the development process
+(and even at the time I'm writing this) the project does not fully conform to the design, I have worked and 
+will continue to work towards this.   Below are details about how this final project satisfies the 
+semester project requirements.
+<li>Requirements</li>
+<ol class="alphastyle">
+ <li>Game grid</li>
+ Generated grid table with the grid(r,c) javacript function, stylized with CSS.
+ <li>User input (forms)</li>
+ Text input used to ask for player's name (defaults to 'the unknown alchemist').  Select used for choosing a 
+ custom level on the 'Trust me...' page.  Buttons are on the level choice page, high score page, and the custom
+ level page.  (Note, when I say 'page', I mean a div popup.)
+ <li>User input (mouse clicks)</li>
+ Click events are added to all grid tiles, the waste square, plus all buttons or div/text links that change a
+ part of the game.
+ <li>DHTML using innerHTML or DOM functions</li>
+ Name is added to the game page depending on what name you give it.  Score, level, and rank are changed based on
+ the game states.
+ <li>XMLHttpRequest for JSON or HTML</li>
+ XMLHttpRequest loads a default high score file if none is found in localStorage.
+ <li>HTML5 audio tags, ..., localStorage</li>
+ Audio tags used for sound effects.  localStorage is used for saving/loading a game state and high scores.
+ <li>Game logic code</li>
+ Game logic is fully implemented.  There may be changes to point values in the future, but this is merely cosmetic.
+</ol>
+<li>Future work</li>
+I plan to work on the styling of the game (some of the current design is pretty tacky), as well as code clean-up
+ and point distribution. 	
+</ol>
+</div>
+</body>
+</html>

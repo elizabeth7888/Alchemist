@@ -1,0 +1,38 @@
+<scoreboard>
+	<player name="Hermes Trismegistus">
+		<score>1500000</score>
+		<rank>Grand Alchemist</rank>
+	</player>
+	<player name="Ostanes">
+		<score>740000</score>
+		<rank>Grand Wizard</rank>
+	</player>
+	<player name="Agathodaemon">
+		<score>400000</score>
+		<rank>Conjurer</rank>
+	</player>
+	<player name="Nagarjuna">
+		<score>320000</score>
+		<rank>Transumter</rank>
+	</player>
+	<player name="Zhang Guo the Elder">
+		<score>250000</score>
+		<rank>Thaumaturge</rank>
+	</player>
+	<player name="Al-Farabi">
+		<score>200000</score>
+		<rank>Concoctionist</rank>
+	</player>
+	<player name="Isaac Newton">
+		<score>80000</score>
+		<rank>Senior Apprentice</rank>
+	</player>
+	<player name="Albus Dumbledore">
+		<score>20000</score>
+		<rank>Dabbler</rank>
+	</player>
+	<player name="Edward Elric">
+		<score>10000</score>
+		<rank>Bungler</rank>
+	</player>
+</scoreboard>

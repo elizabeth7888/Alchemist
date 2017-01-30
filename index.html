@@ -1,0 +1,225 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"> 
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<html>
+	<head>
+		<title>Alchemist: The Game</title>
+	</head>
+	<!-- Style sheet for game -->
+	<link rel="stylesheet" type="text/css" href="alchemy.css">
+<body>
+<center>
+<!-- Header -->
+<div id="header"></div>
+<div id="savegame">Save Game</div>
+<!-- Display the score and the level -->
+<h3><font color=#FFFFFF>
+<div class="gamescorediv">
+<p id="gamescore">
+Score: 0
+</p>
+</div>
+
+<div class="gameleveldiv">
+<p id="gamelevel">
+Level: 6
+</p>
+</div>
+
+<div class="gamerankdiv">
+<p id="gamerank">
+Rank: Greenhorn
+</p>
+</div>
+</font></h3>
+<div id="clickmessage">
+You have yet to click the grid.
+</div>
+
+<!-- This is the game board -->
+<div id="gameboard">
+<table id="grid">  <!-- Fine.  I'll do a table.  Happy? -->
+
+
+</table>
+
+<!-- End of the grid -->
+<!-- The following is additional game items -->
+
+<div id="gameinfo">
+	<div id="nextitem">
+	<img src="images/lead.png" id="nextitemimg" width=60 height=60>
+	</div>
+	<div id="dross">
+	</div>
+</div>
+</div>
+
+
+<script type="text/javascript" src="gameboard.js">
+</script>
+
+<script language="javascript">
+	setupDross();
+</script>
+<!-- End of the additional items and gameboard -->
+
+<!-- Start of the gamestart popup -->
+
+<div id="abc">
+	<div id="popup_start">
+		<div id="clearstorage">
+			Click here to clear local storage.<br>(Highscores and saved games)		
+		</div>
+		<div class="wiggleroom">
+			<div id="nameinput">
+				Enter your name: <br>
+				<input type="text" id="name" maxlength="20">
+			</div>		
+		</div>
+		<div class="wiggleroom">
+		<div id="debug" class="button">Debug</div>
+		</div>
+		<div class="wiggleroom">
+		<button id="beginner" class="button">Beginner</button>
+		</div>
+		<div class="wiggleroom">
+		<button id="intermediate" class="button">Intermediate</button>
+		</div>
+		<div class="wiggleroom">
+		<button id="advanced" class="button">Advanced</button>
+		</div>
+		<div class="wiggleroom">
+		<button id="custom" class="button">Trust Me, I'm an Alchemist</button>
+		</div>	
+		<div class="wiggleroom" id="loadgamediv">
+		<button id="loadgame" class="button">Load a Saved Game</button>  
+		</div>
+		<div id="tutorialbut"><a id="clicktut">Take me to the tutorial!</a></div>
+	</div>
+</div>
+
+<!-- End of the gamestart popup -->
+
+
+<!-- Start of the level popup -->
+
+<div id="abc_levels">
+	<div id="popup_levels">
+	Please select a level:
+	<div class="wiggleroom">
+	<select id="levelselect">
+		<!--<option>Please select a level:</option>-->	
+	</select>
+	</div>
+
+	<script language="javascript" >
+		draw_popup_levels();
+	</script>
+	
+		<div class="wiggleroom">
+		<button id="OK" class="button">OK</button>
+		</div>
+
+	</div>
+</div>
+
+<!-- End of the level popup -->
+
+<!-- Start of Starting Animation -->
+
+<div id="titleanimation">
+(Click to skip intro.)
+<div id="animationtxt">
+	Alchemist
+</div>
+</div>
+
+<!-- End of Starting Animation -->
+
+<!-- Start of debug pane -->
+<div id="debuginfo">
+<textarea id="debugtxt" value="You have yet to click a grid tile.">
+</textarea>
+</div>
+<!-- End of debug pane -->
+
+<div id="abc_endgame">
+<div id="endgame">
+
+<div class="wiggleroom">
+ <div id="endgametitle">
+  Game Over!
+ </div>
+</div>
+
+ <div id="highscores">
+ <div class="wiggleroom">
+	<div id="scoreboard"></div>
+	<div class="smalltxt">
+	</div>
+ </div>
+ </div>
+ 
+ <div class="wiggleroom"> <button id="newgamebutton" class="button">New Game</button></div>
+
+</div>
+</div>
+<!-- Endgame Popup -->
+
+<!-- End of Endgame popup -->
+<div id="sounds">
+ <audio id="tick" controls>
+  <source src="sounds/tick.mp3" type="audio/mpeg">
+ </audio>
+ <audio id="bomb" controls>
+  <source src="sounds/bomb.mp3" type="audio/mpeg">
+ </audio>
+ <audio id="magic" controls>
+  <source src="sounds/magic.mp3" type="audio/mpeg">
+ </audio>
+ <audio id="waste" controls>
+  <source src="sounds/waste.mp3" type="audio/mpeg">
+ </audio>
+ <audio id="fail" controls>
+  <source src="sounds/fail.mp3" type="audio/mpeg">
+ </audio>
+ <audio id="intro" controls>
+  <source src="sounds/intro.mp3" type="audio/mpeg">
+ </audio>
+</div>
+
+<div id="tutorialdiv">
+ <div id="clickmsg">Click to continue...</div>
+ <div id="tut1" class="tutorial">
+  <img src="tutorial/tut1.jpg" class="tutpic" id="tut1img">
+ </div>
+ <div id="tut2" class="tutorial">
+  <img src="tutorial/tut2.png" class="tutpic" id="tut2img">
+ </div>
+ <div id="tut3" class="tutorial">
+  <img src="tutorial/tut3.png" class="tutpic" id="tut3img">
+ </div>
+ <div id="tut4" class="tutorial">
+  <img src="tutorial/tut4.png" class="tutpic" id="tut4img">
+ </div>
+ <div id="tut5" class="tutorial">
+  <img src="tutorial/tut5.png" class="tutpic" id="tut5img">
+ </div>
+ <div id="tut6" class="tutorial">
+  <img src="tutorial/tut6.png" class="tutpic" id="tut6img">
+ </div>
+ <div id="tut7" class="tutorial">
+  <img src="tutorial/tut7.png" class="tutpic" id="tut7img">
+ </div> 
+</div>
+
+<div id="tutprompt">
+Do you want the tutorial first? <p>
+<button id="yes" class="button">Yes</button> <button id="no" class="button">No</button>
+</div>
+
+</center>
+	<!-- Game JS file -->
+	<script type="text/javascript" src="model.js"></script>
+</body>
+</html>

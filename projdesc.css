@@ -1,0 +1,318 @@
+#gameboard {
+	background-color: #aaaaaa;
+	padding-bottom: 10px;
+	padding-top: 10px;
+	padding-left: 40px;
+	padding-right: 40px;
+}
+
+#grid {
+	border-spacing:0;
+	display:block;
+	border:1px;
+}
+
+table {
+	padding: 0px;
+}
+
+#grid td {
+	padding: 0px;
+	border: 1px;
+	border-style: solid;
+	border-color: #ffffff;
+}
+
+#grid tr {
+	padding: 0px;
+	display: block;
+	border: 1px;
+	border-color: #ffffff;
+}
+
+#gameitems {
+	padding:10px;
+	display:block;
+	margin-top: 0%;
+	margin-bottom: 100%;
+
+}
+
+#nextimg {
+	width: 60px;
+	height: 60px;
+}
+
+#nextitem {
+	background-color: orange;
+	border:1px;
+	border-color: #000000;
+	border-style: solid;
+}
+
+#wasteimg {
+	width: 60px;
+	height: 60px;
+}
+
+#waste {
+	background-color: #222222;
+	border:1px;
+	border-color: #000000;
+	border-style: solid;
+}
+
+#cell43 {
+	background-color: blue;
+}
+
+#cell34 {
+	background-color: red;
+}
+
+#cell45 {
+	background-color: green;
+}
+
+#cell46 {
+	background-color: yellow;
+}
+
+#cell56 {
+	background-color: yellow;
+}
+
+hr {
+	width:70%;
+}
+
+
+a {
+	text-decoration: none;
+	color: teal;
+	font-weight: bold;
+}
+
+ol.prefixed {
+    border-top: 1px solid rgba(78,68,50,.05);
+    counter-reset: item;
+
+    margin-left: -20px;
+    padding-top: 20px;
+}
+
+ol.romanstyle {
+	counter-reset:item;
+	list-style-type: upper-roman;
+   *list-style-type: upper-roman; /*Conditional hack for ie7*/
+}
+
+ol.romanstyle li {
+	font-size:20px;
+	font-weight: bold;
+}
+
+ol.romanstyle li:before {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+
+ol.alphastyle {
+	counter-reset:item;
+	list-style-type: upper-alpha;
+   *list-style-type: upper-alpha; /*Conditional hack for ie7*/
+}
+
+ol.alphastyle li {
+	font-size:16px;
+	font-weight: bold;
+}
+
+ol.alphastyle li:before {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+ul.minilist li {
+	font-size:12px;
+	font-weight: normal;
+}
+
+
+#desc {
+	width:90%;
+	display:block;
+	padding-left:5%;
+	padding-right:5%;
+	font-weight: normal;
+	font-size: 12px; 
+}
+
+#elementtable {
+	border:1px;
+	border-color:#000000;
+	border-style: solid;
+}
+
+#colortable {
+	border:1px;
+	border-color:#000000;
+	border-style: solid;
+
+}
+
+#ranktable {
+	border:1px;
+	border-color:#000000;
+	border-style: solid;
+}
+
+#elementtable td {
+	border:1px;
+	border-color:#000000;
+	border-style: solid;
+	width: 20px;
+	height: 20px;
+}
+
+#colortable td {
+	border:1px;
+	border-color:#000000;
+	border-style: solid;
+	width: 20px;
+	height: 20px;
+}
+
+#ranktable td {
+	border:1px;
+	border-color:#000000;
+	border-style: solid;
+	width: 20px;
+	height: 20px;
+
+}
+
+.icon{
+	width:20px;
+	height:20px;
+}
+
+td#red {
+	width:20px;
+	height:20px;
+	background-color: red;
+}
+
+td#green {
+	width:20px;
+	height:20px;
+	background-color: green;
+}
+
+td#blue {
+	width:20px;
+	height:20px;
+	background-color: blue;
+}
+
+td#magenta {
+	width:20px;
+	height:20px;
+	background-color: magenta;
+}
+
+td#yellow {
+	width:20px;
+	height:20px;
+	background-color: yellow;
+}
+
+td#cyan {
+	width:20px;
+	height:20px;
+	background-color: cyan;
+}
+
+td#orange {
+	width:20px;
+	height:20px;
+	background-color: orange;
+}
+
+td#white {
+	width:20px;
+	height:20px;
+	background-color: white;
+}
+
+td#gray {
+	width:20px;
+	height:20px;
+	background-color: gray;
+}
+
+td#pink {
+	width:20px;
+	height:20px;
+	background-color: pink;
+}
+
+td#black {
+	width:20px;
+	height:20px;
+	background-color: black;
+}
+
+td#purple {
+	width:20px;
+	height:20px;
+	background-color: purple;
+}
+
+.spacer {
+	text-indent: 50px;
+}
+
+.loginfield {
+	width:200px;
+	border-radius: 8px;
+	text-align: center;
+	background-color: #eeeeee;
+	display:inline-block;
+}
+
+#loginform {
+	font-weight:bold;
+	font-size: 14px;
+	margin:auto;
+	text-align: center;
+	width: 100%;
+	background-color: #dddddd;
+	display:inline-block;
+}
+
+.logindiv {
+	padding: 5px;
+	display:inline-block;
+}
+
+#submit {
+	display:inline-block;
+} 
+
+#submitbutton {
+	width: 60px;
+	height: 40px;
+	display:inline-block;
+}
+
+#textfields {
+	display:inline-block;
+}
+
+#loginreport {
+	height:20px;
+	font-size: 10px;
+	color: red;
+}
